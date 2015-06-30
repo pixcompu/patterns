@@ -18,11 +18,4 @@ public class Animal{
 		return flyHab.tryFly();
 	}
 
-	public static void main(String[] args){
-		Dog firulais = new Dog(2, "firulais", "a.. dog");
-		Bird alfred = new Bird(1, "alfred", "a.. bird");
-
-		System.out.println("Dog -" + firulais.tryToFly());
-		System.out.println("Bird -" + alfred.tryToFly());
-	}
 }
