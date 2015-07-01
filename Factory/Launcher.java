@@ -10,15 +10,15 @@ Razones por las cuales aplicar Factory:
 */
 public class Launcher{
 	public static void main(String[] args) {
-		FactoryObjeto factory = new FactoryObjeto();
+		FactoryObjetos factory = new FactoryObjetos();
 		Scanner scn = new Scanner(System.in);
-		Objeto personaje = null;
-		System.out.println("Ingresa un personaje (naruto/goku): ");
+		GeneralObject myGeneralObject = null;
+		System.out.println("Ingresa un tipo (typeOne/typeTwo): ");
 		String opcion = scn.nextLine();
-		personaje = factory.createObjeto(opcion);
-		if(personaje != null){
-			personaje.doYourThing();
-			personaje.doSomething();
+		myGeneralObject = factory.createObjeto(opcion);
+		if(myGeneralObject != null){
+			myGeneralObject.doYourThing();
+			myGeneralObject.doSomething();
 		}else{
 			System.out.println("No ingresaste algo valido");
 		}

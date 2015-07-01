@@ -1,9 +1,9 @@
-public abstract class Objeto{
+public abstract class GeneralObject{
 
 	protected String name;
 	protected String description;
 
-	public Objeto(String newName, String newDescription){
+	public GeneralObject(String newName, String newDescription){
 		this.name = newName;
 		this.description = newDescription;
 	}
