@@ -7,7 +7,6 @@ public class ChildClass extends DadClass{
 		this.nameToShow = nameToShow;
 	}
 
-
 	public ChildClass(){}
 
 	private String obtainingReturnValue(){

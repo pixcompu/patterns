@@ -12,8 +12,8 @@ public class Launcher{
 	¿imposible? no lo creo... que empieze el Demo
 	*/
 	public static void main(String[] args) {
-		//Inicializemos nuestra victima y variables de instancia
 		/**
+		Iniciemos nuestras variables de instancia
 		>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BEGIN<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 		*/
 		ChildClass instanceOfChild = null;
@@ -70,7 +70,7 @@ public class Launcher{
 			constructorTwo = reflectClass.getConstructor(int.class, String.class);
 			//Aprovechando este try lanzemos la magia!
 			//Hacemos un objeto basado en el constructor de la clase Reflejada
-			System.out.println("Construyendo el objeto con : " + "("+firstConstructorParam +","+ secondConstructorParam+")");
+			System.out.println("Building the object wich constructor is : " + "("+firstConstructorParam +","+ secondConstructorParam+")");
 			constructorTwoObject = constructorTwo.newInstance(firstConstructorParam,secondConstructorParam);
 			//<>>>>>><<>< MAGIA! ><>>>>>>>>>><
 			instanceOfChild = (ChildClass)constructorTwoObject;
