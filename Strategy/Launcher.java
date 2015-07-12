@@ -12,10 +12,11 @@
 	*/
 
 	public static void main(String[] args){
-		Dog firulais = new Dog(2, "firulais", "a.. dog");
-		Bird alfred = new Bird(1, "alfred", "a.. bird");
+		SampleObject myObject = new SampleObject();
+		myObject.tryToDoSomething();
 
-		System.out.println("Dog -" + firulais.tryToFly());
-		System.out.println("Bird -" + alfred.tryToFly());
+		myObject.changeBehavior();
+
+		myObject.tryToDoSomething();
 	}
 }
